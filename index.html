@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <style>
+       .index10{
+            text-decoration: none;
+            font-size: 20px;
+            color:white;
+        
+        }
+        span{
+            
+            padding-left: 35px;
+            margin-left: 200px;
+            padding-top: 50px;
+           
+
+        }
+        nav{
+            height: 45px;
+            background-color: grey;
+
+        }
+        .index1{
+            padding-top: 6px;
+        }
+        .index2{
+            text-align: center;
+        }
+        .index3{
+            height: 325px;
+            width: 560px; 
+            float: left;
+            background-color: grey;
+            border-radius: 12px;
+            margin-left:35px ;
+           }
+        .index4
+        {
+            
+            float: right;  
+            margin-right:35px ;
+        }
+        .index5{
+            font-size: 18px;
+        }
+        #button{
+            margin-left:205px;
+            
+        }
+        li{
+            padding: 2px;
+        }
+        .index9{
+            height: 385px;
+
+        }
+
+        a{
+            text-decoration: none;
+            color: black;
+        }
+        body
+        {
+            border-color: #dcdcdc;
+        }
+    </style>
+</head>
+<body>
+    <h2 class="index2">PAGE REPLACEMENT ALGORITHM</h2>
+ <nav>
+    <div class="index1">
+    <span><a href="index.html" class="index10">HOME</a></span>
+    <span><a href="lru.html" class="index10">LRU</a></span>
+    <span><a href="fifo.html" class="index10">FIFO</a></span>
+    <span><a href="optimal.html" class="index10">OPTIMAL</a></span>
+    </div>
+ </nav>
+ <br>
+ <div class="index9">
+ <h4 style="text-align: center;">FIFO</h4>
+ 
+ <div class="index3">
+    <br>
+    
+    <li>Start to traverse the pages.</li>
+    <li>If the memory holds fewer pages, then the capacity else goes to step 5.</li> 
+    <li> Push pages in the queue one at a time until the queue reaches its maximum capacity or all page requests are fulfilled.</li>
+    <li>If the current page is present in the memory, do nothing.</li>
+    <li>Else, pop the topmost page from the queue as it was inserted first.</li>
+    <li>Replace the topmost page with the current page from the string.</li>
+    <li>Increment the page faults.</li>
+    <button type="button" class="btn btn-light" id="button"><a href="fifo.html">Simulation</a></button>
+</div>
+ <div class="index4">
+    <iframe width="560" height="325" border-radius="12px" src="https://www.youtube.com/embed/8rcUs5RutX0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+ </div>
+</div>
+<br>
+
+<div class="index9">
+<h4 style="text-align:center">LRU</h4>
+<br>
+  <div class="index3">
+    <br>
+    <li>Start the process.</li>
+    <li>Declare the page size.</li>
+    <li>Determine the number of pages to be inserted.</li>
+    <li>Get the value.</li>
+    <li>Declare the counter and stack value.</li>
+    <li>Choose the least recently used page by the counter value.</li>
+    <li> Stack them as per the selection.</li>
+    <li>Display the values.</li>
+    <li>Terminate the process.</li>
+    <button type="button" class="btn btn-light" id="button"><a href="lru.html">Simulation</a></button>
+
+
+  </div>
+  <div class="index4">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/dYIoWkCvd6A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  </div>
+</div>
+<br>
+
+
+<h4 style="text-align: center;">OPTIMAL</h4>
+<div class="index9">
+    
+    <br>
+    <div class="index3">
+        <br>
+        <li>Start the process.</li>
+        <li>Declare the page size.</li>
+        <li>Push the first page in the stack as per the memory demand.</li>
+        <li>Push the second page as per the memory demand.</li>
+        <li>Push the third page until the memory is full.</li>
+        <li> repeat step 4 until the page demand continues and until the processing is over.</li>
+        <li>Display the values.</li>
+        <li>Terminate the process.</li>
+        <button type="button" class="btn btn-light" id="button"><a href="optimal.html">Simulation</a></button>
+    
+    
+    </div>
+    <div class="index4">
+        <iframe width="560" height="325" src="https://www.youtube.com/embed/q2BpMvPhhrY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>     
+    </div>
+</div>
+
+<br>
+<br>
+
+</body>
+</html>
